@@ -183,7 +183,13 @@ var PROJECTS = [
   accentColor: "#64B5F6",
   icon: "💳",
   appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/icon-debt.jpeg",
-  screenshots: [],
+  screenshots: [   
+    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/1.png",
+    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/2.png",
+    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/3.png",
+    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/4.png",
+    "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/5.png"
+  ],
   downloadUrl: "https://github.com/abdulqddus/debt-qat-management-system/releases/download/v1.0.0/base.apk",
   sourceUrl: "",
   demoUrl: "",
