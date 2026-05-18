@@ -137,7 +137,7 @@ var PROJECTS = [
   "color": "#1976D2",
   "accentColor": "#42A5F5",
   "icon": "📶",
-  "appIcon": "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/app_icon_512.png",
+  "appIcon": "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/icon-debt.jpeg",
   "screenshots": [
     "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢١٦٠١.png",
     "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٥٠٨-٠٢٤٩٣٦.png",
