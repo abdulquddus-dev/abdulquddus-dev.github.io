@@ -13,7 +13,7 @@ var PROJECTS = [
     type: "android",
     platform: "Android",
     status: "released",
-    version: "1.0.1",
+    version: "1.1.1",
     size: "54 MB",
     category: "تجارة إلكترونية",
     tags: ["Flutter", "Firebase", "Dart", "ImageKit", "Gemini AI"],
@@ -28,7 +28,7 @@ var PROJECTS = [
        "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٤١٨-١٢٠٤٣٩.png",
        "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_٢٠٢٦٠٤١٨-١٢٠٤٣٩.png"
     ],
-    downloadUrl: "https://github.com/sba849198-sketch/abdulquddus-aqdev.github.io/releases/download/v1.1.0/app-release.apk",
+    downloadUrl: "https://github.com/sba849198-sketch/abdulquddus-aqdev.github.io/releases/download/v1.1.1/app-release.apk",
     sourceUrl: "",
     demoUrl: "",
     featured: true,
