@@ -3,8 +3,13 @@
 //  آخر تحديث: 2026
 // ════════════════════════════════════════════════════════
 
-var BASE_URL = "https://sba849198-sketch.github.io/abdulquddus-aqdev.github.io";
+var BASE_URL = "https://AbdulQuddus-dev.github.io/abdulquddus-aqdev.github.io";
 
+const baseImageUrl = "https://raw.githubusercontent.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/main/images/";
+const deptSystemUrl = baseImageUrl + "imageDeptSystem/";
+const sougaAppUrl = baseImageUrl + "imageSougaApp/";
+const findMyPhoneUrl = baseImageUrl + "imageFindMyPhone/";
+const wifiManagerUrl = baseImageUrl + "imageWifiManager/";
 // ════════ أنواع المشاريع ════════
 var PROJECT_TYPES = {
   android: { label: "Android",      badge: "Android",   downloadLabel: "تحميل APK مجاناً",  color: "#3DDC84" },
@@ -40,19 +45,19 @@ var PROJECTS = [
     color: "#DC143C",
     accentColor: "#FFB300",
     icon: "🛒",
-    appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/1774761818932~2.png",
+    appIcon: sougaAppUrl + "icon_app.jpeg",
     screenshots: [
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/1.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/2.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/3.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/4.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/5.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/6.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/7.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/8.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/souga/9.png"
+      sougaAppUrl + "1.png",
+      sougaAppUrl + "2.png",
+      sougaAppUrl + "3.png",
+      sougaAppUrl + "4.png",
+      sougaAppUrl + "5.png",
+      sougaAppUrl + "6.png",
+      sougaAppUrl + "7.png",
+      sougaAppUrl + "8.png",
+      sougaAppUrl + "9.png"
     ],
-    downloadUrl: "https://github.com/sba849198-sketch/abdulquddus-aqdev.github.io/releases/download/v1.1.1/app-release.apk",
+    downloadUrl: "https://github.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/releases/download/v1.1.1/app-release.apk",
     sourceUrl: "",
     demoUrl: "",
     featured: true,
@@ -81,19 +86,20 @@ var PROJECTS = [
     color: "#1976D2",
     accentColor: "#42A5F5",
     icon: "📶",
-    appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/app_icon_512.png",
+    appIcon: wifiManagerUrl +"app_icon_512.png",
     screenshots: [
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A1%D9%A6%D9%A0%D9%A1.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A4%D9%A9%D9%A3%D9%A6.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A4%D9%A9%D9%A5%D9%A7.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A4%D9%A9%D9%A3%D9%A0.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A4%D9%A9%D9%A4%D9%A7.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A5%D9%A0%D9%A1%D9%A4.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A5%D9%A0%D9%A2%D9%A8.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A0%D9%A5%D9%A0%D9%A8-%D9%A0%D9%A2%D9%A5%D9%A1%D9%A0%D9%A9.png"
+      wifiManagerUrl + "0.png",
+      wifiManagerUrl + "1.png",
+      wifiManagerUrl + "2.png",
+      wifiManagerUrl + "3.png",
+      wifiManagerUrl + "4.png",
+      wifiManagerUrl + "5.png",
+      wifiManagerUrl + "6.png",
+      wifiManagerUrl + "7.png",
+      wifiManagerUrl + "8.png"
     ],
-    downloadUrl: "https://github.com/sba849198-sketch/WIFI-Manager/releases/download/v1.0.0/app-release.apk",
-    sourceUrl: "https://github.com/sba849198-sketch/WIFI-Manager",
+    downloadUrl: "https://github.com/AbdulQuddus-dev/WIFI-Manager/releases/download/v1.0.0/app-release.apk",
+    sourceUrl: "https://github.com/AbdulQuddus-dev/WIFI-Manager",
     demoUrl: "",
     featured: true,
     date: "2026-05-08"
@@ -121,12 +127,12 @@ var PROJECTS = [
     color: "#1565C0",
     accentColor: "#42A5F5",
     icon: "🤖",
-    appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/ShaibAI.ico",
+    appIcon: "https://raw.githubusercontent.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/main/images/ShaibAI.ico",
     screenshots: [
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(103).png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(104).png"
+      "https://raw.githubusercontent.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/main/images/%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(103).png",
+      "https://raw.githubusercontent.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/main/images/%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(104).png"
     ],
-    downloadUrl: "https://github.com/sba849198-sketch/abdulquddus-aqdev.github.io/releases/download/shaibai-v2.0/ShaibAI-Setup.exe",
+    downloadUrl: "https://github.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/releases/download/shaibai-v2.0/ShaibAI-Setup.exe",
     sourceUrl: "",
     demoUrl: "",
     featured: false,
@@ -157,7 +163,7 @@ var PROJECTS = [
     icon: "🌐",
     appIcon: "",
     screenshots: [],
-    downloadUrl: "https://github.com/sba849198-sketch/abdulquddus-aqdev.github.io/releases/download/shaibai-web-v1.0/ShaibAI-WebForm.zip",
+    downloadUrl: "https://github.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/releases/download/shaibai-web-v1.0/ShaibAI-WebForm.zip",
     sourceUrl: "",
     demoUrl: "",
     featured: false,
@@ -186,14 +192,14 @@ var PROJECTS = [
     color: "#0D47A1",
     accentColor: "#64B5F6",
     icon: "💳",
-    appIcon: "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/icon-debt.jpeg",
+    appIcon: deptSystemUrl + "icon-debt.jpeg",
     screenshots: [
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/1.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/2.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/3.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/4.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/5.png",
-      "https://raw.githubusercontent.com/sba849198-sketch/abdulquddus-aqdev.github.io/main/images/6.png"
+      deptSystemUrl + "1.png",
+      deptSystemUrl + "2.png",
+      deptSystemUrl + "3.png",
+      deptSystemUrl + "4.png",
+      deptSystemUrl + "5.png",
+      deptSystemUrl + "6.png"
     ],
     downloadUrl: "https://github.com/abdulqddus/debt-qat-management-system/releases/download/v1.0.0/base.apk",
     sourceUrl: "",
@@ -327,8 +333,16 @@ var PROJECTS = [
     color: "#E65100",
     accentColor: "#FFA726",
     icon: "🔍",
-    appIcon: "",
-    screenshots: [],
+    appIcon: findMyPhoneUrl + "find_my_phone_icon.png",
+    screenshots: [
+       findMyPhoneUrl + "1.png",
+       findMyPhoneUrl + "2.png",
+       findMyPhoneUrl + "3.png",
+       findMyPhoneUrl + "4.png",
+       findMyPhoneUrl + "5.png",
+       findMyPhoneUrl + "6.png",
+       findMyPhoneUrl + "7.png"
+    ],
     downloadUrl: "",
     sourceUrl: "",
     demoUrl: "",
