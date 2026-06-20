@@ -28,7 +28,7 @@
 <meta property="og:image:width"  content="512">
 <meta property="og:image:alt"    content="AQ Dev — شعار عبدالقدوس الشيباني">
 <meta property="og:image:height" content="512">
-<meta property="og:locale"       content="ar_SA">
+<meta property="og:locale"       content="ar_AR">
 <!-- ══ Twitter ══ -->
 <meta name="twitter:card"        content="summary_large_image">
 <meta name="twitter:title"       content="AQ Dev — عبدالقدوس الشيباني">
@@ -36,7 +36,7 @@
 <meta name="twitter:image"       content="https://abdulquddus-dev.github.io/app_icon_512.png">
 <!-- ══ PWA ══ -->
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#060B18">
+<meta name="theme-color" content="#05080f">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="AQ Dev">
@@ -587,7 +587,18 @@ footer{
 @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.6}}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* ════════ Responsive ════════ */
+/* ════════ Tablet (portrait & landscape) ════════ */
+@media(min-width:769px) and (max-width:1024px){
+  .about-grid{gap:36px}
+  .pgrid{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+  .h1{font-size:2.6rem}
+  #hero{padding:90px 6% 56px}
+}
+@media(min-width:769px) and (max-width:900px) and (orientation:portrait){
+  .about-grid{grid-template-columns:1fr;gap:40px}
+}
+
+/* ════════ Mobile ════════ */
 @media(max-width:768px){
   .nl{display:none}
   .ham{display:flex}
@@ -655,6 +666,12 @@ footer{
   .btn-primary,.btn-ghost{font-size:.82rem;padding:11px 18px}
 }
 </style>
+<noscript>
+<style>
+/* بدون JavaScript: المحتوى يظهر مباشرة بدل أن يبقى مخفياً للأبد بانتظار سكربت لا يعمل */
+.reveal{opacity:1!important;transform:none!important}
+</style>
+</noscript>
 </head>
 <body>
 
