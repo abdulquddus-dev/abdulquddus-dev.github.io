@@ -24,6 +24,14 @@ var AQStats = (function () {
                   function ()  { cb({ views:0, downloads:0 }); });
   }
 
+  // قراءة لمرة واحدة بدل اشتراك مباشر مستمر (onSnapshot) — أخف على الموارد
+  // ولا يترك قناة Firestore "Listen" مفتوحة بلا نهاية أمام Googlebot وغيره.
+  function getStats(projectId, cb) {
+    db.collection("projects").doc(projectId).get()
+      .then(function (d) { cb(d.exists ? d.data() : { views:0, downloads:0 }); })
+      .catch(function ()  { cb({ views:0, downloads:0 }); });
+  }
+
   function recordView(projectId) {
     db.collection("projects").doc(projectId)
       .set({ views: firebase.firestore.FieldValue.increment(1) }, { merge: true })
@@ -45,7 +53,7 @@ var AQStats = (function () {
       }).catch(function () { cb({}); });
   }
 
-  return { listenStats:listenStats, recordView:recordView, recordDownload:recordDownload, getAllStats:getAllStats };
+  return { listenStats:listenStats, getStats:getStats, recordView:recordView, recordDownload:recordDownload, getAllStats:getAllStats };
 })();
 
 // ════════════════════════════════════════════════════════
@@ -65,6 +73,23 @@ var AQReviews = (function () {
         });
         cb(arr);
       }, function () { cb([]); });
+  }
+
+  // قراءة لمرة واحدة بدل اشتراك مستمر — نفس سبب getStats أعلاه.
+  function getReviews(projectId, cb) {
+    db.collection("projects").doc(projectId)
+      .collection("reviews")
+      .orderBy("createdAt", "desc")
+      .get()
+      .then(function (snap) {
+        var arr = [];
+        snap.forEach(function (doc) {
+          var d = doc.data();
+          arr.push({ id:doc.id, name:d.name||"مجهول", rating:d.rating||0, text:d.text||"", date:d.dateStr||"" });
+        });
+        cb(arr);
+      })
+      .catch(function () { cb([]); });
   }
 
   function addReview(projectId, name, rating, text, cb) {
@@ -89,5 +114,5 @@ var AQReviews = (function () {
       });
   }
 
-  return { listenReviews:listenReviews, addReview:addReview };
+  return { listenReviews:listenReviews, getReviews:getReviews, addReview:addReview };
 })();

@@ -3,9 +3,9 @@
 //  آخر تحديث: 2026
 // ════════════════════════════════════════════════════════
 
-var BASE_URL = "https://AbdulQuddus-dev.github.io/abdulquddus-aqdev.github.io";
+var BASE_URL = "https://abdulquddus-dev.github.io";
 
-const baseImageUrl = "https://raw.githubusercontent.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/main/images/";
+const baseImageUrl = "https://abdulquddus-dev.github.io/images/";
 const deptSystemUrl = baseImageUrl + "imageDeptSystem/";
 const sougaAppUrl = baseImageUrl + "imageSougaApp/";
 const findMyPhoneUrl = baseImageUrl + "imageFindMyPhone/";
@@ -127,10 +127,10 @@ var PROJECTS = [
     color: "#1565C0",
     accentColor: "#42A5F5",
     icon: "🤖",
-    appIcon: "https://raw.githubusercontent.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/main/images/ShaibAI.ico",
+    appIcon: baseImageUrl + "ShaibAI.ico",
     screenshots: [
-      "https://raw.githubusercontent.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/main/images/%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(103).png",
-      "https://raw.githubusercontent.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/main/images/%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(104).png"
+      baseImageUrl + "shaibai-desktop-screenshot-1.png",
+      baseImageUrl + "shaibai-desktop-screenshot-2.png"
     ],
     downloadUrl: "https://github.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/releases/download/shaibai-v2.0/ShaibAI-Setup.exe",
     sourceUrl: "",
