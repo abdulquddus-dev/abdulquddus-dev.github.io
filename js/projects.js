@@ -47,15 +47,15 @@ var PROJECTS = [
     icon: "🛒",
     appIcon: sougaAppUrl + "icon_app.png",
     screenshots: [
-      sougaAppUrl + "1.png",
-      sougaAppUrl + "2.png",
-      sougaAppUrl + "3.png",
-      sougaAppUrl + "4.png",
-      sougaAppUrl + "5.png",
-      sougaAppUrl + "6.png",
-      sougaAppUrl + "7.png",
-      sougaAppUrl + "8.png",
-      sougaAppUrl + "9.png"
+      sougaAppUrl + "1.webp",
+      sougaAppUrl + "2.webp",
+      sougaAppUrl + "3.webp",
+      sougaAppUrl + "4.webp",
+      sougaAppUrl + "5.webp",
+      sougaAppUrl + "6.webp",
+      sougaAppUrl + "7.webp",
+      sougaAppUrl + "8.webp",
+      sougaAppUrl + "9.webp"
     ],
     downloadUrl: "https://github.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/releases/download/v1.1.1/app-release.apk",
     sourceUrl: "",
@@ -88,15 +88,15 @@ var PROJECTS = [
     icon: "📶",
     appIcon: wifiManagerUrl +"app_icon_512.png",
     screenshots: [
-      wifiManagerUrl + "0.png",
-      wifiManagerUrl + "1.png",
-      wifiManagerUrl + "2.png",
-      wifiManagerUrl + "3.png",
-      wifiManagerUrl + "4.png",
-      wifiManagerUrl + "5.png",
-      wifiManagerUrl + "6.png",
-      wifiManagerUrl + "7.png",
-      wifiManagerUrl + "8.png"
+      wifiManagerUrl + "0.webp",
+      wifiManagerUrl + "1.webp",
+      wifiManagerUrl + "2.webp",
+      wifiManagerUrl + "3.webp",
+      wifiManagerUrl + "4.webp",
+      wifiManagerUrl + "5.webp",
+      wifiManagerUrl + "6.webp",
+      wifiManagerUrl + "7.webp",
+      wifiManagerUrl + "8.webp"
     ],
     downloadUrl: "https://github.com/AbdulQuddus-dev/WIFI-Manager/releases/download/v1.0.0/app-release.apk",
     sourceUrl: "https://github.com/AbdulQuddus-dev/WIFI-Manager",
@@ -129,8 +129,8 @@ var PROJECTS = [
     icon: "🤖",
     appIcon: baseImageUrl + "ShaibAI.ico",
     screenshots: [
-      baseImageUrl + "shaibai-desktop-screenshot-1.png",
-      baseImageUrl + "shaibai-desktop-screenshot-2.png"
+      baseImageUrl + "shaibai-desktop-screenshot-1.webp",
+      baseImageUrl + "shaibai-desktop-screenshot-2.webp"
     ],
     downloadUrl: "https://github.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/releases/download/shaibai-v2.0/ShaibAI-Setup.exe",
     sourceUrl: "",
@@ -194,12 +194,12 @@ var PROJECTS = [
     icon: "💳",
     appIcon: deptSystemUrl + "icon-debt.jpeg",
     screenshots: [
-      deptSystemUrl + "1.png",
-      deptSystemUrl + "2.png",
-      deptSystemUrl + "3.png",
-      deptSystemUrl + "4.png",
-      deptSystemUrl + "5.png",
-      deptSystemUrl + "6.png"
+      deptSystemUrl + "1.webp",
+      deptSystemUrl + "2.webp",
+      deptSystemUrl + "3.webp",
+      deptSystemUrl + "4.webp",
+      deptSystemUrl + "5.webp",
+      deptSystemUrl + "6.webp"
     ],
     downloadUrl: "https://github.com/abdulqddus/debt-qat-management-system/releases/download/v1.0.0/base.apk",
     sourceUrl: "",
@@ -335,13 +335,13 @@ var PROJECTS = [
     icon: "🔍",
     appIcon: findMyPhoneUrl + "find_my_phone_icon.png",
     screenshots: [
-       findMyPhoneUrl + "1.png",
-       findMyPhoneUrl + "2.png",
-       findMyPhoneUrl + "3.png",
-       findMyPhoneUrl + "4.png",
-       findMyPhoneUrl + "5.png",
-       findMyPhoneUrl + "6.png",
-       findMyPhoneUrl + "7.png"
+       findMyPhoneUrl + "1.webp",
+       findMyPhoneUrl + "2.webp",
+       findMyPhoneUrl + "3.webp",
+       findMyPhoneUrl + "4.webp",
+       findMyPhoneUrl + "5.webp",
+       findMyPhoneUrl + "6.webp",
+       findMyPhoneUrl + "7.webp"
     ],
     downloadUrl: "https://github.com/AbdulQuddus-dev/findMyPhone/releases/download/v0.0.1/app-release.apk",
     sourceUrl: "",

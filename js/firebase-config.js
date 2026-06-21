@@ -1,17 +1,27 @@
 // ════════════════════════════════════════════════════════
-//  firebase-config.js
-//  🔴 استبدل القيم أدناه بإعدادات مشروعك من Firebase Console
+//  firebase-config.js — Firebase v9+ Modular SDK (ES Modules)
+//  محمَّل عبر <script type="module"> مباشرة من CDN بدون bundler.
+//  هذا يقلل حجم الكود المُحمَّل بشكل كبير مقارنة بنسخة compat
+//  القديمة، لأن استيراد دوال محددة فقط (tree-shaking طبيعي من
+//  المتصفح نفسه عبر ES Modules) أخف بكثير من تحميل كامل الـ SDK.
 // ════════════════════════════════════════════════════════
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+import {
+  getFirestore, doc, getDoc, setDoc, onSnapshot, increment,
+  collection, getDocs, addDoc, query, orderBy, serverTimestamp
+} from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
+
 var FIREBASE_CONFIG = {
-apiKey: "AIzaSyAeLXOPgUEDm17M42I9uRVdzlzsp2bgsz4",
+  apiKey: "AIzaSyAeLXOPgUEDm17M42I9uRVdzlzsp2bgsz4",
   authDomain: "aqdev-website-88e35.firebaseapp.com",
   projectId: "aqdev-website-88e35",
   storageBucket: "aqdev-website-88e35.firebasestorage.app",
   messagingSenderId: "77627286992",
   appId: "1:77627286992:web:0678aaf20ace7087dec5d5"
 };
-firebase.initializeApp(FIREBASE_CONFIG);
-var db = firebase.firestore();
+
+var app = initializeApp(FIREBASE_CONFIG);
+var db = getFirestore(app);
 
 // ════════════════════════════════════════════════════════
 //  AQStats — إحصائيات حقيقية (مشاهدات، تحميلات)
@@ -19,33 +29,31 @@ var db = firebase.firestore();
 var AQStats = (function () {
 
   function listenStats(projectId, cb) {
-    return db.collection("projects").doc(projectId)
-      .onSnapshot(function (d) { cb(d.exists ? d.data() : { views:0, downloads:0 }); },
-                  function ()  { cb({ views:0, downloads:0 }); });
+    return onSnapshot(doc(db, "projects", projectId),
+      function (d) { cb(d.exists() ? d.data() : { views:0, downloads:0 }); },
+      function ()  { cb({ views:0, downloads:0 }); });
   }
 
   // قراءة لمرة واحدة بدل اشتراك مباشر مستمر (onSnapshot) — أخف على الموارد
   // ولا يترك قناة Firestore "Listen" مفتوحة بلا نهاية أمام Googlebot وغيره.
   function getStats(projectId, cb) {
-    db.collection("projects").doc(projectId).get()
-      .then(function (d) { cb(d.exists ? d.data() : { views:0, downloads:0 }); })
+    getDoc(doc(db, "projects", projectId))
+      .then(function (d) { cb(d.exists() ? d.data() : { views:0, downloads:0 }); })
       .catch(function ()  { cb({ views:0, downloads:0 }); });
   }
 
   function recordView(projectId) {
-    db.collection("projects").doc(projectId)
-      .set({ views: firebase.firestore.FieldValue.increment(1) }, { merge: true })
+    setDoc(doc(db, "projects", projectId), { views: increment(1) }, { merge: true })
       .catch(function(){});
   }
 
   function recordDownload(projectId) {
-    db.collection("projects").doc(projectId)
-      .set({ downloads: firebase.firestore.FieldValue.increment(1) }, { merge: true })
+    setDoc(doc(db, "projects", projectId), { downloads: increment(1) }, { merge: true })
       .catch(function(){});
   }
 
   function getAllStats(cb) {
-    db.collection("projects").get()
+    getDocs(collection(db, "projects"))
       .then(function (snap) {
         var r = {};
         snap.forEach(function (d) { r[d.id] = d.data(); });
@@ -62,30 +70,26 @@ var AQStats = (function () {
 var AQReviews = (function () {
 
   function listenReviews(projectId, cb) {
-    return db.collection("projects").doc(projectId)
-      .collection("reviews")
-      .orderBy("createdAt", "desc")
-      .onSnapshot(function (snap) {
-        var arr = [];
-        snap.forEach(function (doc) {
-          var d = doc.data();
-          arr.push({ id:doc.id, name:d.name||"مجهول", rating:d.rating||0, text:d.text||"", date:d.dateStr||"" });
-        });
-        cb(arr);
-      }, function () { cb([]); });
+    var q = query(collection(db, "projects", projectId, "reviews"), orderBy("createdAt", "desc"));
+    return onSnapshot(q, function (snap) {
+      var arr = [];
+      snap.forEach(function (d) {
+        var data = d.data();
+        arr.push({ id:d.id, name:data.name||"مجهول", rating:data.rating||0, text:data.text||"", date:data.dateStr||"" });
+      });
+      cb(arr);
+    }, function () { cb([]); });
   }
 
   // قراءة لمرة واحدة بدل اشتراك مستمر — نفس سبب getStats أعلاه.
   function getReviews(projectId, cb) {
-    db.collection("projects").doc(projectId)
-      .collection("reviews")
-      .orderBy("createdAt", "desc")
-      .get()
+    var q = query(collection(db, "projects", projectId, "reviews"), orderBy("createdAt", "desc"));
+    getDocs(q)
       .then(function (snap) {
         var arr = [];
-        snap.forEach(function (doc) {
-          var d = doc.data();
-          arr.push({ id:doc.id, name:d.name||"مجهول", rating:d.rating||0, text:d.text||"", date:d.dateStr||"" });
+        snap.forEach(function (d) {
+          var data = d.data();
+          arr.push({ id:d.id, name:data.name||"مجهول", rating:data.rating||0, text:data.text||"", date:data.dateStr||"" });
         });
         cb(arr);
       })
@@ -96,23 +100,30 @@ var AQReviews = (function () {
     var now = new Date();
     var m   = now.getMonth() + 1;
     var ds  = now.getFullYear() + "/" + (m<10?"0"+m:m) + "/" + (now.getDate()<10?"0"+now.getDate():now.getDate());
-    db.collection("projects").doc(projectId).collection("reviews")
-      .add({ name:name||"مجهول", rating:rating, text:text, dateStr:ds,
-             createdAt: firebase.firestore.FieldValue.serverTimestamp() })
+    addDoc(collection(db, "projects", projectId, "reviews"),
+      { name:name||"مجهول", rating:rating, text:text, dateStr:ds, createdAt: serverTimestamp() })
       .then(function () { _updateAvg(projectId); cb(true);  })
       .catch(function () { cb(false); });
   }
 
   function _updateAvg(pid) {
-    db.collection("projects").doc(pid).collection("reviews").get()
+    getDocs(collection(db, "projects", pid, "reviews"))
       .then(function (snap) {
         if (snap.empty) return;
         var tot = 0, cnt = 0;
         snap.forEach(function (d) { tot += (d.data().rating||0); cnt++; });
-        db.collection("projects").doc(pid)
-          .set({ avgRating: Math.round(tot/cnt*10)/10, reviewsCount: cnt }, { merge: true });
+        setDoc(doc(db, "projects", pid), { avgRating: Math.round(tot/cnt*10)/10, reviewsCount: cnt }, { merge: true });
       });
   }
 
   return { listenReviews:listenReviews, getReviews:getReviews, addReview:addReview };
 })();
+
+// AQStats/AQReviews تُستخدم من index.html كسكربت عادي (غير module) لذا
+// نعرضها صراحة على window حتى تبقى متاحة عالمياً كما كانت في compat،
+// ونُطلق حدثاً مخصصاً لإعلام بقية الصفحة أن Firebase أصبح جاهزاً فعلياً
+// (مهم لأن type="module" يُحمَّل بشكل مؤجل تلقائياً، فقد ينفّذ السكربت
+// الرئيسي قبل اكتمال هذا الملف لولا هذا التنسيق الصريح).
+window.AQStats = AQStats;
+window.AQReviews = AQReviews;
+window.dispatchEvent(new Event('aqFirebaseReady'));
