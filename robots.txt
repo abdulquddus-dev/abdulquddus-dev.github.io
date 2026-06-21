@@ -1,7 +1,7 @@
 # AQ Dev — robots.txt
 User-agent: *
 Allow: /
-Sitemap: https://abdulquddus-dev.github.io/sitemap.xml
+Sitemap: https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/sitemap.xml
 Crawl-delay: 1
 
 # Block spam crawlers
