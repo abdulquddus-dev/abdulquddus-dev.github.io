@@ -3,9 +3,9 @@
 //  آخر تحديث: 2026
 // ════════════════════════════════════════════════════════
 
-var BASE_URL = "https://abdulquddus-dev.github.io";
+var BASE_URL = "https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io";
 
-const baseImageUrl ="https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/images/";
+const baseImageUrl = "https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/images/";
 const deptSystemUrl = baseImageUrl + "imageDeptSystem/";
 const sougaAppUrl = baseImageUrl + "imageSougaApp/";
 const findMyPhoneUrl = baseImageUrl + "imageFindMyPhone/";
