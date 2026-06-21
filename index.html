@@ -168,8 +168,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet"></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;800;900&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;800;900&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="preconnect" href="https://www.gstatic.com">
 
 <style>
@@ -188,7 +188,7 @@
   --red:   #c92038;
   --txt:   #dde4f5;
   --txt2:  #7a8aaa;
-  --txt3:  #3d4d68;
+  --txt3:  #6e82ab;
   --grn:   #20c95e;
   --r:     16px;
   --fa:   'Tajawal', 'Segoe UI', 'Arial', sans-serif;
@@ -314,10 +314,16 @@ nav.scrolled{background:rgba(5,8,15,0.92)}
   border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);
   background:rgba(5,8,15,0.5);
 }
-.ticker-track{display:flex;gap:52px;animation:ticker 28s linear infinite;white-space:nowrap}
+.ticker-track{
+  display:flex;gap:52px;white-space:nowrap;
+  animation:ticker 26s linear infinite;
+  direction:ltr; /* يوحّد اتجاه الترتيب مع اتجاه translateX فيمنع القفزة المرئية في صفحة RTL */
+  width:max-content;
+}
 .ticker-item{
   display:inline-flex;align-items:center;gap:10px;
   font-size:.82rem;color:var(--txt3);flex-shrink:0;font-family:var(--fm);
+  direction:rtl; /* يحافظ على اتجاه قراءة صحيح لكل عنصر منفرد رغم انعكاس الحاوية الأم */
 }
 .ticker-item span{color:var(--txt2)}
 
@@ -579,6 +585,9 @@ footer{
 @keyframes fadeUp{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.6}}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){
+  .ticker-track{animation-duration:90s}
+}
 
 /* ════════ Tablet (portrait & landscape) ════════ */
 @media(min-width:769px) and (max-width:1024px){
@@ -685,21 +694,21 @@ footer{
     <a href="#about">عني</a>
     <a href="#contact">التواصل</a>
   </div>
-  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  <button class="ham" id="ham" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- ══ SEO Text (hidden from users, visible to crawlers) ══ -->
 <div aria-hidden="true" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">
-  <h1>AQ Dev — عبدالقدوس الشيباني مطور تطبيقات Flutter وFirebase وC# وASP.NET</h1>
-  <h2>تحميل تطبيق سوجا Souga — سوق إلكتروني عربي Flutter Firebase Android مجاني</h2>
+  <h2>AQ Dev — عبدالقدوس الشيباني مطور تطبيقات Flutter وFirebase وC# وASP.NET</h2>
+  <h3>تحميل تطبيق سوجا Souga — سوق إلكتروني عربي Flutter Firebase Android مجاني</h3>
   <p>سوجا Souga تطبيق تجارة إلكترونية Flutter Firebase Android. مشتري وبائع ومدير. دردشة مباشرة، ذكاء اصطناعي Gemini، 42 عملة، ImageKit. تحميل APK مجاني.</p>
-  <h2>تحميل ShaibAI Desktop — ذكاء اصطناعي محلي Windows C# WinForms .NET مجاني</h2>
+  <h3>تحميل ShaibAI Desktop — ذكاء اصطناعي محلي Windows C# WinForms .NET مجاني</h3>
   <p>ShaibAI Desktop برنامج ذكاء اصطناعي محلي لـ Windows. C# WinForms .NET 4.8. يعمل بدون إنترنت عبر LM Studio Qwen2.5. تحميل مجاني.</p>
-  <h2>تحميل ShaibAI Web — ASP.NET WebForms C# ذكاء اصطناعي ويب مجاني</h2>
+  <h3>تحميل ShaibAI Web — ASP.NET WebForms C# ذكاء اصطناعي ويب مجاني</h3>
   <p>ShaibAI Web نسخة ASP.NET WebForms من مساعد الذكاء الاصطناعي. تعمل من المتصفح وتتصل بـ LM Studio محلياً. مجاني.</p>
-  <h2>تحميل مدير الواي فاي WiFi Manager — Flutter Hive Firebase إدارة مصاريف إنترنت</h2>
+  <h3>تحميل مدير الواي فاي WiFi Manager — Flutter Hive Firebase إدارة مصاريف إنترنت</h3>
   <p>مدير الواي فاي تطبيق Flutter لإدارة مصاريف الإنترنت والاشتراكات والديون. Hive تخزين محلي وFirebase مزامنة. عربي RTL. تحميل APK مجاني.</p>
-  <h2>محفظة الديون الذكية — إدارة الديون بالصوت تقارير مالية</h2>
+  <h3>محفظة الديون الذكية — إدارة الديون بالصوت تقارير مالية</h3>
   <p>محفظة الديون الذكية تطبيق لإدارة الديون والمستحقات. إدخال صوتي، تنبيهات ذكية، تقارير مالية. واجهة عربية RTL احترافية.</p>
   <p>AQ Dev عبدالقدوس الشيباني مطور Flutter Firebase Android C# .NET ASP.NET ذكاء اصطناعي محلي LM Studio Qwen مشاريع مجانية يمني</p>
   <p>مشاريع flutter, مشاريع firebase, مشاريع asp.net, مشاريع سيشارب, مشاريع ويب html css js, تطوير تطبيقات, مطور تطبيقات</p>
@@ -810,7 +819,7 @@ footer{
 <!-- ══ MODAL ══ -->
 <div class="ov" id="ov">
   <div class="mdl">
-    <button class="mdl-close" id="mClose">✕</button>
+    <button class="mdl-close" id="mClose" aria-label="إغلاق التفاصيل">✕</button>
     <div class="mdl-hero" id="mHero">
       <span class="mdl-hero-icon" id="mIcon">📱</span>
       <div class="mdl-appicon" id="mAppIcon" style="display:none"><img id="mAppImg" src="" alt=""></div>
@@ -831,21 +840,19 @@ footer{
 
 <!-- ══ LIGHTBOX ══ -->
 <div class="lb" id="lb">
-  <button class="lb-x"    id="lbX">✕</button>
-  <button class="lb-prev" id="lbPrev">&#8249;</button>
+  <button class="lb-x"    id="lbX" aria-label="إغلاق الصورة">✕</button>
+  <button class="lb-prev" id="lbPrev" aria-label="الصورة السابقة">&#8249;</button>
   <img id="lbImg" src="" alt="">
-  <button class="lb-next" id="lbNext">&#8250;</button>
+  <button class="lb-next" id="lbNext" aria-label="الصورة التالية">&#8250;</button>
   <div class="lb-dots" id="lbDots"></div>
   <div class="lb-ctr"  id="lbCtr"></div>
 </div>
 
 <div class="toast" id="toast"></div>
 
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<!-- Firebase (Modular SDK v9+ — أخف بكثير من نسخة compat القديمة) -->
 <script src="js/projects.js"></script>
-<script src="js/firebase-config.js"></script>
+<script type="module" src="js/firebase-config.js"></script>
 
 <script>
 /* ════════════════════════════════
@@ -951,11 +958,17 @@ function renderProjects(f){
   g.innerHTML=h;
   document.getElementById('pCount').textContent=PROJECTS.length;
   g.querySelectorAll('.pc').forEach(function(c){c.onclick=function(){openModal(c.getAttribute('data-id'));};});
-  // Fetch Firebase stats
-  AQStats.getAllStats(function(all){
-    Object.keys(all).forEach(function(pid){_sc[pid]=all[pid];updateCard(pid,all[pid]);});
-    PROJECTS.forEach(function(p){if(!all[p.id])updateCard(p.id,{views:0,downloads:0,avgRating:0});});
-  });
+  // Fetch Firebase stats — ننتظر جهوزية وحدة Firebase (module) إن لم تكن
+  // جاهزة بعد، لتفادي خطأ "AQStats is undefined" الناتج عن كون type="module"
+  // يُحمَّل بشكل مؤجل تلقائياً وقد يتأخر عن هذا السكربت العادي.
+  function fetchStats(){
+    AQStats.getAllStats(function(all){
+      Object.keys(all).forEach(function(pid){_sc[pid]=all[pid];updateCard(pid,all[pid]);});
+      PROJECTS.forEach(function(p){if(!all[p.id])updateCard(p.id,{views:0,downloads:0,avgRating:0});});
+    });
+  }
+  if(window.AQStats){fetchStats();}
+  else{window.addEventListener('aqFirebaseReady',fetchStats,{once:true});}
 }
 
 function updateCard(pid,s){
@@ -974,7 +987,6 @@ function openModal(id){
   var p=PROJECTS.find(function(x){return x.id===id;});if(!p)return;
   var t=PROJECT_TYPES[p.type]||PROJECT_TYPES.android;
   _curId=id; _allRevs=[];
-  AQStats.recordView(id);
 
   // SEO push state
   try{
@@ -1029,7 +1041,7 @@ function openModal(id){
     da.style.background='linear-gradient(135deg,'+p.color+','+p.color+'bb)';
     da.innerHTML='⬇️ '+t.downloadLabel;
     if(p.type==='android'){da.setAttribute('download','');}else{da.target='_blank';da.rel='noopener';}
-    da.onclick=function(){AQStats.recordDownload(id);toast('🚀 جاري التحميل...');};
+    da.onclick=function(){if(window.AQStats)AQStats.recordDownload(id);toast('🚀 جاري التحميل...');};
     ae.appendChild(da);
   }else{
     var nb=document.createElement('button');nb.className='dl-btn';
@@ -1045,27 +1057,34 @@ function openModal(id){
   var pu=BASE_URL+'/?project='+id;
   var wt=(p.shareTitle||p.title)+'\n\n'+(p.shareDesc||p.description)+'\n\n'+pu;
   document.getElementById('mShare').innerHTML='<span class="share-lbl">شارك:</span>'
-    +'<button class="share-btn" id="cpBtn">🔗</button>'
-    +'<a class="share-btn" href="https://wa.me/?text='+encodeURIComponent(wt)+'" target="_blank" rel="noopener">💬</a>'
-    +'<a class="share-btn" href="https://t.me/share/url?url='+encodeURIComponent(pu)+'&text='+encodeURIComponent(p.shareTitle||p.title)+'" target="_blank" rel="noopener">✈️</a>'
-    +'<a class="share-btn" href="https://twitter.com/intent/tweet?url='+encodeURIComponent(pu)+'&text='+encodeURIComponent((p.shareTitle||p.title).slice(0,80))+'" target="_blank" rel="noopener">𝕏</a>';
+    +'<button class="share-btn" id="cpBtn" aria-label="نسخ الرابط">🔗</button>'
+    +'<a class="share-btn" href="https://wa.me/?text='+encodeURIComponent(wt)+'" target="_blank" rel="noopener" aria-label="مشاركة عبر واتساب">💬</a>'
+    +'<a class="share-btn" href="https://t.me/share/url?url='+encodeURIComponent(pu)+'&text='+encodeURIComponent(p.shareTitle||p.title)+'" target="_blank" rel="noopener" aria-label="مشاركة عبر تيليجرام">✈️</a>'
+    +'<a class="share-btn" href="https://twitter.com/intent/tweet?url='+encodeURIComponent(pu)+'&text='+encodeURIComponent((p.shareTitle||p.title).slice(0,80))+'" target="_blank" rel="noopener" aria-label="مشاركة عبر إكس">𝕏</a>';
   document.getElementById('cpBtn').onclick=function(){copyUrl(pu);};
 
-  // Live stats listener (مع قطع تلقائي بعد دقيقتين أمان لتفادي قنوات معلّقة)
-  if(_uns[id])_uns[id]();
-  _uns[id]=AQStats.listenStats(id,function(s){
-    _sc[id]=s;
-    var mv=document.getElementById('mViews'),md=document.getElementById('mDls');
-    if(mv)mv.textContent=fmtN(s.views||0);if(md)md.textContent=fmtN(s.downloads||0);
-    updateCard(id,s);
-  });
-  clearTimeout(_uns[id+'_t']);
-  _uns[id+'_t']=setTimeout(function(){if(_uns[id]){_uns[id]();delete _uns[id];}},120000);
-
-  // Reviews
-  loadReviews(id);
   document.getElementById('ov').classList.add('open');
   document.body.style.overflow='hidden';
+
+  // ──── كل ما يعتمد على Firebase معاً، خلف حارس واحد آمن ────
+  // type="module" يُحمَّل بشكل مؤجل تلقائياً، فقد يتأخر عن هذا السكربت
+  // العادي (خصوصاً عبر deep-link السريع ?project=)؛ هذا الحارس يمنع أي
+  // استثناء "AQStats is undefined" بغض النظر عن توقيت التحميل.
+  function startFirebaseFeatures(){
+    AQStats.recordView(id);
+    if(_uns[id])_uns[id]();
+    _uns[id]=AQStats.listenStats(id,function(s){
+      _sc[id]=s;
+      var mv=document.getElementById('mViews'),md=document.getElementById('mDls');
+      if(mv)mv.textContent=fmtN(s.views||0);if(md)md.textContent=fmtN(s.downloads||0);
+      updateCard(id,s);
+    });
+    clearTimeout(_uns[id+'_t']);
+    _uns[id+'_t']=setTimeout(function(){if(_uns[id]){_uns[id]();delete _uns[id];}},120000);
+    loadReviews(id);
+  }
+  if(window.AQStats){startFirebaseFeatures();}
+  else{window.addEventListener('aqFirebaseReady',startFirebaseFeatures,{once:true});}
 }
 
 /* ════════════════════════════════
