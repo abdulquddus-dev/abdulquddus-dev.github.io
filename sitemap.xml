@@ -16,4 +16,67 @@
     </image:image>
   </url>
 
+  <url>
+    <loc>https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/?project=souga</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/images/imageSougaApp/icon_app.png</image:loc>
+      <image:title>سوجا Souga — تطبيق تجارة إلكترونية Flutter Firebase Android</image:title>
+      <image:caption>تطبيق سوجا Souga للتسوق الإلكتروني العربي. Flutter Firebase Gemini AI. تحميل APK مجاني.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/?project=wifi_manager</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/images/imageWifiManager/app_icon_512.png</image:loc>
+      <image:title>مدير الواي فاي WiFi Manager — Flutter Hive Firebase Android</image:title>
+      <image:caption>تطبيق مدير الواي فاي لإدارة مصاريف الإنترنت والديون والاشتراكات. Flutter Firebase Hive.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/?project=shaibai-desktop</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/?project=shaibai-web</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/?project=smart-debt-wallet</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image>
+      <image:loc>https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/images/imageDeptSystem/icon-debt.jpeg</image:loc>
+      <image:title>محفظة الديون الذكية — إدارة الديون بالصوت تقارير مالية</image:title>
+      <image:caption>تطبيق محفظة الديون الذكية. إدارة الديون والمستحقات بإدخال صوتي وتقارير مالية. واجهة عربية.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/?project=azraknet</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
 </urlset>
+<!--
+  ملاحظة: رياحين الجنان، ذِمّة، اعثر على هاتفي مشاريع معلّقة (commented out)
+  في js/projects.js — لم تُضَف لخريطة الموقع لتفادي صفحات meta/JSON-LD
+  مكسورة (soft-404) حتى يتم تفعيلها فعلياً بإزالة التعليق عنها.
+  عند تفعيل أي منها، أضف رابط ?project=ID جديد هنا.
+-->
