@@ -3,9 +3,9 @@
 //  آخر تحديث: 2026
 // ════════════════════════════════════════════════════════
 
-var BASE_URL = "https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io";
+var BASE_URL = "https://abdulquddus-dev.github.io";
 
-const baseImageUrl = "https://abdulquddus-dev.github.io/abdulquddus-aqdev.github.io/images/";
+const baseImageUrl = "https://abdulquddus-dev.github.io/images/";
 const deptSystemUrl = baseImageUrl + "imageDeptSystem/";
 const sougaAppUrl = baseImageUrl + "imageSougaApp/";
 const findMyPhoneUrl = baseImageUrl + "imageFindMyPhone/";
@@ -57,7 +57,7 @@ var PROJECTS = [
       sougaAppUrl + "8.webp",
       sougaAppUrl + "9.webp"
     ],
-    downloadUrl: "https://github.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/releases/download/v1.1.1/app-release.apk",
+    downloadUrl: "https://github.com/abdulquddus-dev.github.io/releases/download/v1.1.1/app-release.apk",
     sourceUrl: "",
     demoUrl: "",
     featured: true,
@@ -132,7 +132,7 @@ var PROJECTS = [
       baseImageUrl + "shaibai-desktop-screenshot-1.webp",
       baseImageUrl + "shaibai-desktop-screenshot-2.webp"
     ],
-    downloadUrl: "https://github.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/releases/download/shaibai-v2.0/ShaibAI-Setup.exe",
+    downloadUrl: "https://github.com/abdulquddus-dev.github.io/releases/download/shaibai-v2.0/ShaibAI-Setup.exe",
     sourceUrl: "",
     demoUrl: "",
     featured: false,
@@ -163,7 +163,7 @@ var PROJECTS = [
     icon: "🌐",
     appIcon: "",
     screenshots: [],
-    downloadUrl: "https://github.com/AbdulQuddus-dev/abdulquddus-aqdev.github.io/releases/download/shaibai-web-v1.0/ShaibAI-WebForm.zip",
+    downloadUrl: "https://github.com/abdulquddus-dev.github.io/releases/download/shaibai-web-v1.0/ShaibAI-WebForm.zip",
     sourceUrl: "",
     demoUrl: "",
     featured: false,
