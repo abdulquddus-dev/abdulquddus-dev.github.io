@@ -57,7 +57,7 @@ var PROJECTS = [
       sougaAppUrl + "8.webp",
       sougaAppUrl + "9.webp"
     ],
-    downloadUrl: "https://github.com/abdulquddus-dev.github.io/releases/download/v1.1.1/app-release.apk",
+    downloadUrl: "https://github.com/abdulquddus-dev/abdulquddus-dev.github.io/releases/download/v1.1.1/app-release.apk",
     sourceUrl: "",
     demoUrl: "",
     featured: true,
