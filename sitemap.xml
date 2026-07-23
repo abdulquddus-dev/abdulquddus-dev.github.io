@@ -5,10 +5,9 @@
 
   <url>
     <loc>https://abdulquddus-dev.github.io/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://abdulquddus-dev.github.io/"/>
     <image:image>
       <image:loc>https://abdulquddus-dev.github.io/app_icon_512.png</image:loc>
       <image:title>AQ Dev — عبدالقدوس الشيباني مطور Flutter وFirebase وC#</image:title>
@@ -17,8 +16,8 @@
   </url>
 
   <url>
-    <loc>https://abdulquddus-dev.github.io/?project=souga</loc>
-    <lastmod>2026-06-19</lastmod>
+    <loc>https://abdulquddus-dev.github.io/project/souga/</loc>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -29,8 +28,8 @@
   </url>
 
   <url>
-    <loc>https://abdulquddus-dev.github.io/?project=wifi_manager</loc>
-    <lastmod>2026-06-19</lastmod>
+    <loc>https://abdulquddus-dev.github.io/project/wifi-manager/</loc>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
     <image:image>
@@ -41,22 +40,22 @@
   </url>
 
   <url>
-    <loc>https://abdulquddus-dev.github.io/?project=shaibai-desktop</loc>
-    <lastmod>2026-06-19</lastmod>
+    <loc>https://abdulquddus-dev.github.io/project/shaibai-desktop/</loc>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://abdulquddus-dev.github.io/?project=shaibai-web</loc>
-    <lastmod>2026-06-19</lastmod>
+    <loc>https://abdulquddus-dev.github.io/project/shaibai-web/</loc>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://abdulquddus-dev.github.io/?project=smart-debt-wallet</loc>
-    <lastmod>2026-06-19</lastmod>
+    <loc>https://abdulquddus-dev.github.io/project/smart-debt-wallet/</loc>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
     <image:image>
@@ -67,16 +66,46 @@
   </url>
 
   <url>
-    <loc>https://abdulquddus-dev.github.io/?project=azraknet</loc>
-    <lastmod>2026-06-19</lastmod>
+    <loc>https://abdulquddus-dev.github.io/project/dhimma/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://abdulquddus-dev.github.io/images/imageDhimma/icon_app.png</image:loc>
+      <image:title>ذِمّة — تطبيق إدارة الديون الشخصية Flutter Firebase</image:title>
+      <image:caption>تطبيق ذمة لإدارة الديون الشخصية مع مزامنة Firebase وبحث ذكي بالاسم. واجهة عربية.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://abdulquddus-dev.github.io/project/find-my-phone/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://abdulquddus-dev.github.io/images/imageFindMyPhone/find_my_phone_icon.png</image:loc>
+      <image:title>اعثر على هاتفي — تتبع الهاتف المفقود عن بُعد</image:title>
+      <image:caption>تطبيق اعثر على هاتفي لتتبع الهاتف المفقود بالصوت والموقع وأوامر بعيدة. Flutter Firebase.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://abdulquddus-dev.github.io/project/azraknet/</loc>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
 
+  <url>
+    <loc>https://abdulquddus-dev.github.io/project/riyaheen-al-jinan/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://abdulquddus-dev.github.io/images/imageRiyaheen/icon_app.png</image:loc>
+      <image:title>رياحين الجنان — منصة إسلامية قرآن وأذكار وفقه (قريباً)</image:title>
+      <image:caption>رياحين الجنان: قرآن كريم، أذكار، تفسير، فقه، مكتبة صوتية — قيد التطوير.</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
-<!--
-  ملاحظة: رياحين الجنان، ذِمّة، اعثر على هاتفي مشاريع معلّقة (commented out)
-  في js/projects.js — لم تُضَف لخريطة الموقع لتفادي صفحات meta/JSON-LD
-  مكسورة (soft-404) حتى يتم تفعيلها فعلياً بإزالة التعليق عنها.
-  عند تفعيل أي منها، أضف رابط ?project=ID جديد هنا.
--->
