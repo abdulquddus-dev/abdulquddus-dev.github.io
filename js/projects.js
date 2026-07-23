@@ -44,7 +44,7 @@ var PROJECTS = [
     keywords: "سوجا souga تطبيق تجارة إلكترونية flutter firebase android سوق عربي بيع شراء gemini ai",
     color: "#DC143C",
     accentColor: "#FFB300",
-    icon: "🛒",
+    icon: "cart",
     appIcon: sougaAppUrl + "icon_app.png",
     screenshots: [
       sougaAppUrl + "1.webp",
@@ -89,7 +89,7 @@ var PROJECTS = [
     keywords: "مدير الواي فاي wifi manager flutter hive firebase إدارة مصاريف إنترنت ديون اشتراكات android",
     color: "#1976D2",
     accentColor: "#42A5F5",
-    icon: "📶",
+    icon: "wifi",
     appIcon: wifiManagerUrl +"app_icon_512.png",
     screenshots: [
       wifiManagerUrl + "0.webp",
@@ -130,7 +130,7 @@ var PROJECTS = [
     keywords: "ShaibAI shaibai desktop ذكاء اصطناعي محلي offline AI windows C# WinForms LM Studio Qwen بدون إنترنت",
     color: "#1565C0",
     accentColor: "#42A5F5",
-    icon: "🤖",
+    icon: "robot",
     appIcon: baseImageUrl + "ShaibAI.ico",
     screenshots: [
       baseImageUrl + "shaibai-desktop-screenshot-1.webp",
@@ -164,7 +164,7 @@ var PROJECTS = [
     keywords: "ShaibAI Web ASP.NET WebForms C# ذكاء اصطناعي ويب ai chat arabic webforms local AI",
     color: "#7B1FA2",
     accentColor: "#CE93D8",
-    icon: "🌐",
+    icon: "globe",
     appIcon: "",
     screenshots: [],
     downloadUrl: "https://github.com/abdulquddus-dev.github.io/releases/download/shaibai-web-v1.0/ShaibAI-WebForm.zip",
@@ -195,7 +195,7 @@ var PROJECTS = [
     keywords: "محفظة الديون الذكية إدارة الديون debt wallet تسجيل ديون متابعة سداد إدخال صوتي تطبيق مالي عربي",
     color: "#0D47A1",
     accentColor: "#64B5F6",
-    icon: "💳",
+    icon: "wallet",
     appIcon: deptSystemUrl + "icon-debt.jpeg",
     screenshots: [
       deptSystemUrl + "1.webp",
@@ -233,7 +233,7 @@ var PROJECTS = [
     keywords: "الأزرق نت azraknet صفحة دخول شبكة إنترنت html css javascript login page arabic",
     color: "#0097A7",
     accentColor: "#80DEEA",
-    icon: "📡",
+    icon: "satellite",
     appIcon: "",
     screenshots: [],
     downloadUrl: "",
@@ -248,18 +248,17 @@ var PROJECTS = [
   //  لتفعيل أي مشروع: أزل /* و */ المحيطَين به فقط
   // ══════════════════════════════════════════════════════
 
-  /*
   // ══════════════════════════════
-  //  7. رياحين الجنان (قادم)
+  //  7. رياحين الجنان — قيد التطوير حالياً
   // ══════════════════════════════
   {
     id: "riyaheen",
     title: "رياحين الجنان",
     subtitle: "منصة إسلامية شاملة — قرآن، أذكار، تفسير، فقه",
     shareTitle: "🌿 رياحين الجنان — تطبيق إسلامي متكامل للقرآن والأذكار والفقه",
-    shareDesc: "رياحين الجنان: قرآن كريم، أذكار صباح ومساء، تفسير، مسائل فقهية، مكتبة صوتية، واختبارات تفاعلية. كل ما تحتاجه في مكان واحد.",
-    description: "منصة إسلامية متكاملة تضم القرآن الكريم، الأذكار، التفسير، الفقه، المكتبة الصوتية، والاختبارات — مبنية بـ Flutter.",
-    longDescription: "رياحين الجنان حلم طالما أردت تحقيقه — منصة إسلامية حقيقية تجمع كل ما يحتاجه المسلم في تطبيق واحد.\n\nما الذي يميزها؟\n• قرآن كريم كامل مع تلاوة صوتية\n• أذكار الصباح والمساء مع عداد تفاعلي\n• تفسير ميسّر للآيات\n• مسائل فقهية منظمة بالأبواب\n• مكتبة صوتية إسلامية\n• اختبارات تفاعلية لاختبار معلوماتك\n• واجهة جميلة وسهلة الاستخدام",
+    shareDesc: "رياحين الجنان: قرآن كريم، أذكار صباح ومساء، تفسير، مسائل فقهية، مكتبة صوتية، واختبارات تفاعلية. كل ما تحتاجه في مكان واحد — قيد التطوير حالياً.",
+    description: "منصة إسلامية متكاملة تضم القرآن الكريم، الأذكار، التفسير، الفقه، المكتبة الصوتية، والاختبارات — مبنية بـ Flutter. قيد التطوير حالياً.",
+    longDescription: "رياحين الجنان حلم طالما أردت تحقيقه — منصة إسلامية حقيقية تجمع كل ما يحتاجه المسلم في تطبيق واحد، وهي الآن قيد التطوير الفعلي.\n\nما الذي يميزها؟\n• قرآن كريم كامل مع تلاوة صوتية\n• أذكار الصباح والمساء مع عداد تفاعلي\n• تفسير ميسّر للآيات\n• مسائل فقهية منظمة بالأبواب\n• مكتبة صوتية إسلامية\n• اختبارات تفاعلية لاختبار معلوماتك\n• واجهة جميلة وسهلة الاستخدام\n\nتابعني لمعرفة موعد الإطلاق الرسمي.",
     type: "android",
     platform: "Android 5.0+",
     status: "coming_soon",
@@ -267,11 +266,11 @@ var PROJECTS = [
     size: "—",
     category: "إسلامية",
     tags: ["Flutter", "Firebase", "Dart", "Quran", "إسلامي"],
-    keywords: "رياحين الجنان تطبيق إسلامي قرآن أذكار تفسير فقه flutter android إسلام مسلم",
+    keywords: "رياحين الجنان تطبيق إسلامي قرآن أذكار تفسير فقه flutter android إسلام مسلم قريباً",
     color: "#2E7D32",
     accentColor: "#81C784",
-    icon: "🌿",
-    appIcon: "",
+    icon: "leaf",
+    appIcon: baseImageUrl + "imageRiyaheen/icon_app.png",
     screenshots: [],
     downloadUrl: "",
     sourceUrl: "",
@@ -279,11 +278,9 @@ var PROJECTS = [
     featured: false,
     date: "2026"
   },
-  */
 
-  /*
   // ══════════════════════════════
-  //  8. ذِمّة (قادم)
+  //  8. ذِمّة
   // ══════════════════════════════
   {
     id: "dhimma",
@@ -295,7 +292,7 @@ var PROJECTS = [
     longDescription: "ذِمّة اسم يحمل معنى — الالتزام والأمانة — وهذا بالضبط ما بُني عليه التطبيق.\n\nميزاته التي تجعله فريداً:\n• قاموس أسماء عربي ذكي بخوارزمية Fuzzy Matching للبحث\n• يعمل بالكامل بدون إنترنت مع تخزين محلي\n• مزامنة تلقائية مع Firebase عند الاتصال\n• تسجيل سداد جزئي وكامل مع تاريخ كل عملية\n• فلترة وتصفية ذكية للديون\n• واجهة RTL عربية احترافية",
     type: "android",
     platform: "Android 5.0+",
-    status: "coming_soon",
+    status: "released",
     version: "1.0.0",
     size: "—",
     category: "مالية",
@@ -303,8 +300,8 @@ var PROJECTS = [
     keywords: "ذمة dhimma تطبيق ديون شخصية flutter firebase fuzzy search قاموس أسماء عربي android مالية",
     color: "#4A148C",
     accentColor: "#AB47BC",
-    icon: "📒",
-    appIcon: "",
+    icon: "notebook",
+    appIcon: baseImageUrl + "imageDhimma/icon_app.png",
     screenshots: [],
     downloadUrl: "",
     sourceUrl: "",
@@ -312,7 +309,6 @@ var PROJECTS = [
     featured: false,
     date: "2026"
   },
-  */
 
   
   // ══════════════════════════════
@@ -328,7 +324,7 @@ var PROJECTS = [
     longDescription: "اعثر على هاتفي — لأن كل شخص أضاع هاتفه مرة على الأقل.\n\nالتطبيق يمنحك راحة البال:\n• إطلاق صوت إنذار عالٍ حتى لو كان الصوت صامتاً\n• تحديد الموقع الجغرافي في الوقت الفعلي\n• إرسال أوامر بعيدة من أي جهاز آخر\n• قفل الشاشة عن بُعد لحماية بياناتك\n• تنبيهات فورية عند تغيير الشريحة\n• يعمل في الخلفية بدون إزعاج",
     type: "android",
     platform: "Android 5.0+",
-    status: "coming_soon",
+    status: "released",
     version: "1.0.0",
     size: "—",
     category: "أدوات وأمان",
@@ -336,7 +332,7 @@ var PROJECTS = [
     keywords: "اعثر على هاتفي find my phone تتبع هاتف مفقود صوت إنذار موقع flutter firebase android أمان",
     color: "#E65100",
     accentColor: "#FFA726",
-    icon: "🔍",
+    icon: "search",
     appIcon: findMyPhoneUrl + "find_my_phone_icon.png",
     screenshots: [
        findMyPhoneUrl + "1.webp",
