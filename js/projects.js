@@ -303,7 +303,7 @@ var PROJECTS = [
     icon: "notebook",
     appIcon: baseImageUrl + "imageDhimma/icon_app.png",
     screenshots: [],
-    downloadUrl: "",
+    downloadUrl: "https://github.com/aqdev-hub/dhimma/releases/download/v1.0.0/app-release.apk",
     sourceUrl: "",
     demoUrl: "",
     featured: false,
