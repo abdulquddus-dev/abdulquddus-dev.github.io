@@ -236,8 +236,8 @@ var PROJECTS = [
     icon: "satellite",
     appIcon: "",
     screenshots: [],
-    downloadUrl: "",
-    sourceUrl: "",
+    downloadUrl: "https://aqdev-hub.github.io/hotspot/",
+    sourceUrl: "https://aqdev-hub.github.io/hotspot/",
     demoUrl: "",
     featured: false,
     date: "2026"
