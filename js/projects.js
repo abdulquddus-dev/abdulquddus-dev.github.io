@@ -392,7 +392,7 @@ findMyPhoneUrl + "16.jpg"
       dyooniUrl + "5.webp",
       dyooniUrl + "6.webp"
     ],
-    downloadUrl: "",
+    downloadUrl: "https://github.com/aqdev-hub/dyooni/releases/download/v1.0.0/app-release.apk",
     sourceUrl: "",
     demoUrl: "https://dyooni-ea39a.web.app/",
     featured: true,
