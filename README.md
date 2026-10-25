@@ -56,6 +56,7 @@
 | 💳 [محفظة الديون الذكية](https://abdulquddus-dev.github.io/project/smart-debt-wallet/) | إدارة الديون بالإدخال الصوتي وتقارير مالية | Web/Android/Win | ✅ منشور |
 | 📒 [ذِمّة](https://abdulquddus-dev.github.io/project/dhimma/) | ديون شخصية ببحث أسماء ذكي (Fuzzy Matching) | Android | ✅ منشور |
 | 🔍 [اعثر على هاتفي](https://abdulquddus-dev.github.io/project/find-my-phone/) | تتبع الهاتف المفقود بالصوت والموقع وأوامر بعيدة | Android | ✅ منشور |
+| 📱 [Flutter Mobile IDE](https://abdulquddus-dev.github.io/project/flutter-mobile-ide/) | بيئة تطوير Flutter على الهاتف: محرر + معاينة تفاعلية حيّة | Android | ⚡ تجريبي |
 | 📡 [الأزرق نت — AzrakNet](https://abdulquddus-dev.github.io/project/azraknet/) | واجهة تسجيل دخول احترافية لشبكات الإنترنت | Web | ✅ منشور |
 | 🌿 [رياحين الجنان](https://abdulquddus-dev.github.io/project/riyaheen-al-jinan/) | منصة إسلامية — قرآن، أذكار، تفسير، فقه | Android | ⏳ قيد التطوير |
 
@@ -105,6 +106,7 @@ abdulquddus-dev.github.io/
     ├── smart-debt-wallet/index.html
     ├── dhimma/index.html
     ├── find-my-phone/index.html
+    ├── flutter-mobile-ide/index.html
     ├── azraknet/index.html
     └── riyaheen-al-jinan/index.html
 ```

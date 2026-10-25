@@ -90,6 +90,18 @@
   </url>
 
   <url>
+    <loc>https://abdulquddus-dev.github.io/project/flutter-mobile-ide/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://abdulquddus-dev.github.io/images/imageFlutterIDE/icon_app.png</image:loc>
+      <image:title>Flutter Mobile IDE — بيئة تطوير Flutter على الهاتف</image:title>
+      <image:caption>محرر أكواد وشجرة ملفات ومعاينة تفاعلية حيّة لودجتس Flutter داخل تطبيق أندرويد. Dart Riverpod.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://abdulquddus-dev.github.io/project/azraknet/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>

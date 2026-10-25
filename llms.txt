@@ -13,6 +13,7 @@
 - [ديوني — Dyooni](https://dyooni-ea39a.web.app/): تطبيق عربي لإدارة الديون والحسابات، Flutter + Firebase، إدخال صوتي يعمل بالكامل دون إنترنت، تقارير PDF/Excel، ونسخ احتياطي مشفّر AES-256. إدارة وهندسة لؤي القميري، تطوير عبدالقدوس الشيباني.
 - [ذِمّة](https://abdulquddus-dev.github.io/project/dhimma/): تطبيق ديون شخصية مع بحث أسماء ذكي (Fuzzy Matching) ومزامنة Firebase.
 - [اعثر على هاتفي](https://abdulquddus-dev.github.io/project/find-my-phone/): تطبيق لتتبع الهاتف المفقود بالصوت والموقع وأوامر بعيدة.
+- [Flutter Mobile IDE](https://abdulquddus-dev.github.io/project/flutter-mobile-ide/): بيئة تطوير Flutter على هاتف أندرويد — محرر أكواد، شجرة ملفات، Git، ومعاينة تفاعلية حيّة عبر مُفسِّر Dart مُقيَّد (لا يبني مشروعًا كاملًا كـ Android Studio). مجاني ومفتوح المصدر: https://github.com/aqdev-hub/flutter_mobile_ide
 - [الأزرق نت — AzrakNet](https://abdulquddus-dev.github.io/project/azraknet/): واجهة تسجيل دخول احترافية لشبكات الإنترنت.
 - [رياحين الجنان](https://abdulquddus-dev.github.io/project/riyaheen-al-jinan/): منصة إسلامية (قرآن، أذكار، تفسير، فقه) — قيد التطوير.
 
