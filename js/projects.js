@@ -11,6 +11,7 @@ const sougaAppUrl = baseImageUrl + "imageSougaApp/";
 const findMyPhoneUrl = baseImageUrl + "imageFindMyPhone/";
 const wifiManagerUrl = baseImageUrl + "imageWifiManager/";
 const dyooniUrl = baseImageUrl + "imageDyooni/";
+const flutterIdeUrl = baseImageUrl + "imageFlutterIDE/";
 // ════════ أنواع المشاريع ════════
 var PROJECT_TYPES = {
   android: { label: "Android",      badge: "Android",   downloadLabel: "تحميل APK مجاناً",  color: "#3DDC84" },
@@ -396,6 +397,37 @@ findMyPhoneUrl + "16.jpg"
     sourceUrl: "",
     demoUrl: "https://dyooni-ea39a.web.app/",
     featured: true,
+    date: "2026"
+  },
+
+  // ══════════════════════════════
+  //  11. Flutter Mobile IDE
+  // ══════════════════════════════
+  {
+    id: "flutter-mobile-ide",
+    title: "Flutter Mobile IDE",
+    subtitle: "بيئة تطوير Flutter على هاتفك — محرر ومعاينة حيّة",
+    shareTitle: "📱 Flutter Mobile IDE — اكتب وشغّل ودجتس Flutter من هاتفك",
+    shareDesc: "محرر أكواد بتلوين نحوي، شجرة ملفات كاملة، Git، ومعاينة تفاعلية حيّة لودجتس Flutter — كل ذلك داخل تطبيق أندرويد واحد. مجاني ومفتوح المصدر.",
+    description: "بيئة تطوير Flutter مصغّرة تعمل على الهاتف: محرر أكواد، شجرة ملفات، بحث، Git، ومعاينة تفاعلية حيّة عبر مُفسِّر Dart مُقيَّد يبني ودجتس Flutter حقيقية.",
+    longDescription: "Flutter Mobile IDE يتيح لك فتح مشروع Flutter من ذاكرة هاتفك وتعديله ومعاينته مباشرة دون حاسوب.\n\nأبرز ما يقدّمه:\n• محرر أكواد بتلوين نحوي وأرقام أسطر وإغلاق تلقائي للأقواس وتبويبات متعددة\n• شجرة ملفات كاملة: إنشاء وحذف وإعادة تسمية ونسخ وقص ولصق\n• بحث واستبدال، وبحث عبر ملفات المشروع\n• معاينة تفاعلية حيّة: الأزرار تعمل والتنقل بين الشاشات وsetState حقيقي\n• إنشاء مشروع جديد واستعادة آخر مشروع تلقائيًا وإدارة تبعيات pubspec\n• أخطاء بخط متعرج أثناء الكتابة بمحلل Dart الرسمي وتبويب Problems\n• لوحة Git بسيطة (تجريبية) وكونسول\n• واجهة عربية بثيم داكن وفاتح\n\n⚠️ بصراحة تقنية: التطبيق قيد تطوير مستمر (إصدار مبكر)، ولا يبني مشروع Flutter كاملًا كما يفعل Android Studio، بل يفسّر مجموعة جزئية موثّقة من Dart لرسم المعاينة. وهي تتوسع مع كل إصدار.",
+    type: "android",
+    platform: "Android",
+    status: "beta",
+    version: "0.1.0",
+    size: "—",
+    category: "أدوات المطورين",
+    tags: ["Flutter", "Dart", "Riverpod", "IDE", "Git"],
+    keywords: "flutter mobile ide محرر فلاتر على الهاتف بيئة تطوير dart معاينة حية برمجة من الجوال android محرر أكواد",
+    color: "#1E88E5",
+    accentColor: "#F0C868",
+    icon: "code",
+    appIcon: flutterIdeUrl + "icon_app.png",
+    screenshots: [],
+    downloadUrl: "https://github.com/aqdev-hub/flutter_mobile_ide/releases/latest",
+    sourceUrl: "https://github.com/aqdev-hub/flutter_mobile_ide",
+    demoUrl: "",
+    featured: false,
     date: "2026"
   },
 
