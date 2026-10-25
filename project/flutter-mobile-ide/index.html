@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>Flutter Mobile IDE — بيئة تطوير Flutter على الهاتف | AQ Dev عبدالقدوس الشيباني</title>
+<meta name="description" content="Flutter Mobile IDE: اكتب كود Flutter وعدّله وشاهد شاشاتك تعمل من هاتفك — محرر أكواد، إنشاء مشاريع، أخطاء أثناء الكتابة، ومعاينة تفاعلية حيّة. مجاني ومفتوح المصدر، وقيد تطوير مستمر (بصراحة: ليس بديلًا كاملًا عن Android Studio).">
+<meta name="keywords" content="Flutter Mobile IDE, محرر Flutter على الهاتف, بيئة تطوير فلاتر أندرويد, تشغيل Flutter على الموبايل, محرر أكواد Dart, معاينة Flutter حية, Flutter IDE Android, برمجة Flutter من الجوال, عبدالقدوس الشيباني, AQ Dev">
+<meta name="author" content="عبدالقدوس الشيباني — AQ Dev">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://abdulquddus-dev.github.io/project/flutter-mobile-ide/">
 
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AQ Dev">
+<meta property="og:url" content="https://abdulquddus-dev.github.io/project/flutter-mobile-ide/">
+<meta property="og:title" content="Flutter Mobile IDE — بيئة تطوير Flutter على هاتفك">
+<meta property="og:description" content="محرر أكواد + شجرة ملفات + معاينة تفاعلية حيّة لودجتس Flutter، كل ذلك داخل هاتف أندرويد. مجاني ومفتوح المصدر.">
+<meta property="og:image" content="https://abdulquddus-dev.github.io/images/imageFlutterIDE/og_image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="أيقونة Flutter Mobile IDE: هاتف يعرض رمز الكود وزر التشغيل">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flutter Mobile IDE — بيئة تطوير Flutter على هاتفك">
+<meta name="twitter:description" content="محرر أكواد + شجرة ملفات + معاينة تفاعلية حيّة لودجتس Flutter، كل ذلك داخل هاتف أندرويد.">
+<meta name="twitter:image" content="https://abdulquddus-dev.github.io/images/imageFlutterIDE/og_image.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="512x512" href="/images/imageFlutterIDE/icon_app.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon-180.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<meta name="theme-color" content="#05080f">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"SoftwareApplication",
+      "@id":"https://abdulquddus-dev.github.io/project/flutter-mobile-ide/#app",
+      "name":"Flutter Mobile IDE",
+      "alternateName":["فلاتر موبايل آي دي إي","Flutter IDE for Android","محرر Flutter على الهاتف","flutter_mobile_ide"],
+      "url":"https://abdulquddus-dev.github.io/project/flutter-mobile-ide/",
+      "description":"بيئة تطوير Flutter مصغّرة على هاتف أندرويد: محرر أكواد، إنشاء وفتح مشاريع، فحص أخطاء أثناء الكتابة بمحلل Dart الرسمي، ومعاينة تفاعلية حيّة عبر مُفسِّر Dart مُقيَّد (لا يبني مشروعًا كاملًا كـ Android Studio). إصدار مبكر قيد تطوير مستمر.",
+      "applicationCategory":"DeveloperApplication",
+      "applicationSubCategory":"IDE / Code Editor",
+      "operatingSystem":"Android",
+      "softwareVersion":"0.1.0",
+      "inLanguage":"ar",
+      "isAccessibleForFree":true,
+      "downloadUrl":"https://github.com/aqdev-hub/flutter_mobile_ide/releases/latest",
+      "installUrl":"https://github.com/aqdev-hub/flutter_mobile_ide/releases/latest",
+      "codeRepository":"https://github.com/aqdev-hub/flutter_mobile_ide",
+      "programmingLanguage":"Dart",
+      "image":"https://abdulquddus-dev.github.io/images/imageFlutterIDE/icon_app.png",
+      "screenshot":"https://abdulquddus-dev.github.io/images/imageFlutterIDE/og_image.png",
+      "featureList":[
+        "محرر أكواد بتلوين نحوي وأرقام أسطر وإغلاق تلقائي للأقواس",
+        "شجرة ملفات كاملة: إنشاء وحذف وإعادة تسمية ونسخ وقص ولصق",
+        "تبويبات متعددة وبحث واستبدال وبحث عبر ملفات المشروع",
+        "معاينة تفاعلية حيّة لودجتس Flutter عبر مُفسِّر Dart مُقيَّد",
+        "كونسول لرسائل الأخطاء والتشغيل",
+        "إنشاء مشروع جديد واستعادة آخر مشروع وإدارة تبعيات pubspec",
+        "خطوط متعرجة للأخطاء وتبويب Problems وإكمال تلقائي وتنسيق Dart",
+        "Git بسيط (تجريبي)",
+        "ثيم داكن وفاتح وإعدادات دائمة"
+      ],
+      "keywords":"Flutter Mobile IDE, محرر Flutter على الهاتف, Dart, Riverpod, معاينة حية, برمجة من الجوال, android",
+      "offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"},
+      "author":{"@type":"Person","name":"عبدالقدوس الشيباني","url":"https://abdulquddus-dev.github.io/","sameAs":["https://github.com/AbdulQuddus-dev","https://t.me/abdulquddus_shibani"]}
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"ما هو Flutter Mobile IDE؟","acceptedAnswer":{"@type":"Answer","text":"تطبيق أندرويد مجاني يتيح لك كتابة مشاريع Flutter وتعديلها من هاتفك: محرر أكواد، شجرة ملفات، بحث، Git، ومعاينة تفاعلية حيّة لشاشاتك أثناء الكتابة."}},
+        {"@type":"Question","name":"هل يشغّل Flutter Mobile IDE مشاريع Flutter الكاملة كما يفعل Android Studio؟","acceptedAnswer":{"@type":"Answer","text":"لا. بناء مشروع Flutter كاملًا يتطلب Dart SDK وأدوات Gradle لا يمكن تشغيلها داخل تطبيق على الهاتف. بدلًا من ذلك يستخدم التطبيق مُفسِّر Dart مُقيَّدًا يبني ودجتس Flutter حقيقية للمعاينة التفاعلية، ضمن مجموعة جزئية من صياغة Dart. هذه الحدود موثّقة بصراحة في المشروع."}},
+        {"@type":"Question","name":"كيف أحمّل Flutter Mobile IDE؟","acceptedAnswer":{"@type":"Answer","text":"من صفحة الإصدارات في مستودع GitHub: https://github.com/aqdev-hub/flutter_mobile_ide/releases/latest — نزّل ملف APK وثبّته على هاتف أندرويد (مع السماح بالتثبيت من مصدر خارجي)."}},
+        {"@type":"Question","name":"هل التطبيق مجاني ومفتوح المصدر؟","acceptedAnswer":{"@type":"Answer","text":"نعم، مجاني بالكامل وكوده المصدري متاح على GitHub."}},
+        {"@type":"Question","name":"لماذا يطلب التطبيق صلاحية الوصول إلى التخزين؟","acceptedAnswer":{"@type":"Answer","text":"ليتمكن من فتح مجلد مشروع Flutter من ذاكرة الهاتف وقراءة ملفاته وحفظ تعديلاتك عليه."}}
+      ]
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"AQ Dev","item":"https://abdulquddus-dev.github.io/"},
+        {"@type":"ListItem","position":2,"name":"المشاريع","item":"https://abdulquddus-dev.github.io/#projects"},
+        {"@type":"ListItem","position":3,"name":"Flutter Mobile IDE","item":"https://abdulquddus-dev.github.io/project/flutter-mobile-ide/"}
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;800;900&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;800;900&display=swap" rel="stylesheet"></noscript>
+
+<style>
+:root{--bg:#05080f;--bg2:#080d18;--card:#0a0f1e;--brd:rgba(255,255,255,.08);--gold:#f0a500;--cy:#54c5f8;--red:#c92038;--txt:#dde4f5;--txt2:#7a8aaa;--fa:'Tajawal','Segoe UI',sans-serif;--fm:'IBM Plex Mono',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 500px at 85% -10%,rgba(84,197,248,.08),transparent 60%),var(--bg);color:var(--txt);font-family:var(--fa);line-height:1.85;min-height:100vh}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:64px 20px 80px}
+.crumb{font-size:.8rem;color:var(--txt2);margin-bottom:28px;font-family:var(--fm)}
+.crumb a{color:var(--gold);text-decoration:none}
+.head{display:flex;align-items:center;gap:18px;margin-bottom:22px;flex-wrap:wrap}
+.appicon{width:92px;height:92px;border-radius:22px;overflow:hidden;border:2px solid var(--brd);flex-shrink:0;background:var(--card);box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.appicon img{width:100%;height:100%;object-fit:cover;display:block}
+h1{font-size:clamp(1.5rem,4vw,2.1rem);font-weight:900;letter-spacing:-.02em;margin-bottom:4px;line-height:1.35}
+h2{font-size:1.2rem;font-weight:800;margin:40px 0 14px;color:var(--txt)}
+.sub{color:var(--txt2);font-size:1rem}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}
+.badge{padding:5px 13px;border-radius:20px;background:rgba(240,165,0,.1);color:var(--gold);border:1px solid rgba(240,165,0,.25);font-size:.78rem;font-family:var(--fm)}
+.badge.cy{background:rgba(84,197,248,.1);color:var(--cy);border-color:rgba(84,197,248,.28)}
+.desc{font-size:1.02rem;color:var(--txt);margin:24px 0;padding:20px;background:var(--card);border:1px solid var(--brd);border-radius:14px}
+.feat{margin:16px 0;list-style:none}
+.feat li{margin-bottom:12px;padding-right:22px;position:relative;color:var(--txt2)}
+.feat li::before{content:'◆';position:absolute;right:0;color:var(--gold);font-size:.7rem;top:6px}
+.feat li b{color:var(--txt)}
+.note{margin:18px 0;padding:16px 18px;background:rgba(201,32,56,.07);border:1px solid rgba(201,32,56,.28);border-radius:12px;color:var(--txt2);font-size:.95rem}
+.note b{color:var(--txt)}
+.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:24px 0}
+.meta-item{background:var(--card);border:1px solid var(--brd);border-radius:10px;padding:12px 14px}
+.meta-item span{display:block;color:var(--txt2);font-size:.72rem;margin-bottom:4px;font-family:var(--fm)}
+.steps{counter-reset:s;list-style:none;margin:14px 0}
+.steps li{counter-increment:s;position:relative;padding:10px 46px 10px 0;color:var(--txt2)}
+.steps li::before{content:counter(s);position:absolute;right:0;top:8px;width:30px;height:30px;border-radius:50%;background:rgba(240,165,0,.12);border:1px solid rgba(240,165,0,.3);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--fm);font-size:.82rem}
+details{background:var(--card);border:1px solid var(--brd);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;color:var(--txt)}
+details p{margin-top:10px;color:var(--txt2)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:10px;font-weight:800;font-size:.92rem;text-decoration:none}
+.btn-primary{background:linear-gradient(135deg,var(--gold),#c8870a);color:#05080f}
+.btn-ghost{background:rgba(255,255,255,.05);color:var(--txt);border:1px solid var(--brd)}
+.btn:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--brd);font-size:.78rem;color:var(--txt2)}
+footer a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="crumb" aria-label="مسار التنقل"><a href="/">AQ Dev</a> ‹ <a href="/#projects">المشاريع</a> ‹ Flutter Mobile IDE</nav>
+
+  <header class="head">
+    <div class="appicon"><img src="/images/imageFlutterIDE/icon_app.png" width="92" height="92" alt="أيقونة Flutter Mobile IDE"></div>
+    <div>
+      <h1>Flutter Mobile IDE — بيئة تطوير Flutter على هاتفك</h1>
+      <p class="sub">محرر أكواد + شجرة ملفات + معاينة تفاعلية حيّة، داخل تطبيق أندرويد واحد</p>
+    </div>
+  </header>
+
+  <div class="badges">
+    <span class="badge">Android</span>
+    <span class="badge cy">قيد التطوير المستمر</span>
+    <span class="badge">Flutter</span><span class="badge">Dart</span><span class="badge">Riverpod</span><span class="badge">مفتوح المصدر</span><span class="badge">مجاني</span>
+  </div>
+
+  <p class="desc">Flutter Mobile IDE بيئة تطوير Flutter مصغّرة تعمل بالكامل على الهاتف: افتح مشروعًا من ذاكرة جهازك، عدّل ملفاتك في محرر أكواد احترافي، وشاهد شاشاتك تعمل <b>معاينةً تفاعلية حقيقية</b> (أزرار تعمل، وتنقّل بين الشاشات، و<code>setState</code> يعيد الرسم فعليًا) دون حاسوب.</p>
+
+  <h2>أبرز المزايا</h2>
+  <ul class="feat">
+    <li><b>محرر أكواد احترافي:</b> تلوين نحوي لـ Dart، أرقام أسطر، إزاحة تلقائية، إغلاق تلقائي للأقواس، بحث واستبدال، وتبويبات متعددة.</li>
+    <li><b>إدارة المشاريع:</b> افتح مشروعًا من الجهاز أو أنشئ مشروعًا جديدًا ببنية قياسية، مع استعادة آخر مشروع تلقائيًا وقائمة مشاريع حديثة، وتعديل تبعيات <code>pubspec.yaml</code> من الواجهة.</li>
+    <li><b>شجرة ملفات كاملة:</b> إنشاء وحذف وإعادة تسمية ونسخ وقص ولصق للملفات والمجلدات.</li>
+    <li><b>معاينة حيّة تفاعلية:</b> مُفسِّر Dart مُقيَّد يبني ودجتس Flutter حقيقية من كودك مباشرة، وتُرسم بنفس محرك Flutter.</li>
+    <li><b>بحث عبر المشروع:</b> ابحث في كل ملفات المشروع من مكان واحد.</li>
+    <li><b>أخطاء أثناء الكتابة:</b> خطوط حمراء متعرجة بمحلل Dart الرسمي، وتبويب Problems يفرّق بين «خطأ في كودك» و«المعاينة لا تدعمه بعد».</li>
+    <li><b>إكمال تلقائي وتنسيق:</b> اقتراحات للودجتس ومعاملاتها، وتنسيق كود Dart بضغطة.</li>
+    <li><b>Git بسيط (تجريبي):</b> لوحة Git مدمجة تعمل بمكتبة Dart خالصة، فلا حاجة لثنائي git على الهاتف.</li>
+    <li><b>واجهة عربية بالكامل</b> بثيم داكن وفاتح وإعدادات تُحفظ بين الجلسات.</li>
+  </ul>
+
+  <h2>كيف يعمل؟ (بصراحة تقنية)</h2>
+  <div class="note"><b>تنبيه مهم:</b> هذا التطبيق <b>لا يبني ولا يشغّل</b> مشروع Flutter كاملًا كما يفعل Android Studio، لأن ذلك يتطلب Dart SDK وأدوات Gradle لا يمكن تشغيلها داخل تطبيق على الهاتف. البديل المُنفَّذ هو مُفسِّر يبني الودجتس مباشرة للمعاينة، ويدعم حاليًا <b>مجموعة جزئية من صياغة Dart</b> (ودجتس <code>Stateless</code>/<code>Stateful</code>، <code>setState</code>، <code>Navigator</code>، حلقات <code>for</code>، ودوال مساعدة، و<code>async/await</code> مبسّط). أما حزم pub الخارجية فلا تُنفَّذ في المعاينة، وقائمة الودجتس المدعومة محدودة وتتوسع تدريجيًا. التطبيق <b>قيد تطوير مستمر</b> بإصدار مبكر (0.1.0)، فقد تصادف أخطاء.</div>
+
+  <h2>طريقة التثبيت</h2>
+  <ol class="steps">
+    <li>نزّل ملف APK من صفحة الإصدارات في GitHub (زر التحميل أدناه).</li>
+    <li>اسمح لهاتفك بالتثبيت من مصدر خارجي عند الطلب، ثم ثبّت التطبيق.</li>
+    <li>امنح التطبيق صلاحية «الوصول إلى كل الملفات» ليتمكن من فتح مجلدات المشاريع وحفظ تعديلاتك.</li>
+    <li>اضغط «فتح مشروع من الجهاز»، واختر مجلد مشروع Flutter، وابدأ التعديل.</li>
+  </ol>
+
+  <div class="meta-grid">
+    <div class="meta-item"><span>المنصة</span>Android</div>
+    <div class="meta-item"><span>الإصدار</span>0.1.0</div>
+    <div class="meta-item"><span>الترخيص</span>مجاني — مفتوح المصدر</div>
+    <div class="meta-item"><span>المطوّر</span>عبدالقدوس الشيباني</div>
+  </div>
+
+  <h2>أسئلة شائعة</h2>
+  <details><summary>ما هو Flutter Mobile IDE؟</summary><p>تطبيق أندرويد مجاني يتيح لك كتابة مشاريع Flutter وتعديلها من هاتفك: محرر أكواد، شجرة ملفات، بحث، Git، ومعاينة تفاعلية حيّة لشاشاتك أثناء الكتابة.</p></details>
+  <details><summary>هل يشغّل مشاريع Flutter الكاملة كما يفعل Android Studio؟</summary><p>لا. يستخدم مُفسِّر Dart مُقيَّدًا يبني ودجتس Flutter حقيقية للمعاينة، ضمن مجموعة جزئية من صياغة Dart. الحدود موثّقة بصراحة في المشروع، وتتوسع مع كل إصدار.</p></details>
+  <details><summary>كيف أحمّله؟</summary><p>من صفحة الإصدارات في GitHub: نزّل ملف APK وثبّته على هاتف أندرويد.</p></details>
+  <details><summary>هل هو مجاني ومفتوح المصدر؟</summary><p>نعم، مجاني بالكامل وكوده المصدري متاح على GitHub.</p></details>
+  <details><summary>لماذا يطلب صلاحية التخزين؟</summary><p>ليفتح مجلد مشروع Flutter من ذاكرة الهاتف ويقرأ ملفاته ويحفظ تعديلاتك عليه.</p></details>
+
+  <div class="cta">
+    <a class="btn btn-primary" href="https://github.com/aqdev-hub/flutter_mobile_ide/releases/latest" rel="noopener">تحميل الآن ↓</a>
+    <a class="btn btn-ghost" href="https://github.com/aqdev-hub/flutter_mobile_ide" rel="noopener">الكود المصدري ↗</a>
+    <a class="btn btn-ghost" href="/?project=flutter-mobile-ide">فتح داخل الموقع ↗</a>
+  </div>
+
+  <footer>
+    من تطوير <a href="/">عبدالقدوس الشيباني — AQ Dev</a> · Flutter · Firebase · C# ·
+    <a href="mailto:sba849198@gmail.com">تواصل معي</a>
+  </footer>
+</div>
+</body>
+</html>
