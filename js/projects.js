@@ -274,7 +274,7 @@ var PROJECTS = [
     icon: "leaf",
     appIcon: baseImageUrl + "imageRiyaheen/icon_app.png",
     screenshots: [],
-    downloadUrl: "",
+    downloadUrl: "https://github.com/aqdev-hub/riyaheen_aljinan/releases/download/v1.0.0/app-release.apk",
     sourceUrl: "",
     demoUrl: "",
     featured: false,
